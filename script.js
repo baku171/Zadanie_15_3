@@ -9,15 +9,14 @@ console.log(`${hello} ${world}`);
 
 // Zadanie drugie
 
-const multiply = (x = 1, z = 1) => x * y;
+const multiply = (x, z = 1) => x * y;
 
 console.log(multiply(5));
 
 // Zadanie trzecie
 
 const average = (...args) => {
-    let sum = 0;
-    args.forEach(arg => sum += arg);
+    const sum = [...args].reduce((sum, value) => sum + value, 0);
     return sum/args.length;
 };
 
