@@ -15,7 +15,7 @@ console.log(multiply(5));
 
 // Zadanie trzecie
 
-const average = (...args) => (args.reduce((sum = 0, value) => sum + value, 0)) / args.length;
+const average = (...args) => args.reduce((sum, value) => sum + value, 0) / args.length;
 
 // Zadanie czwarte
 
